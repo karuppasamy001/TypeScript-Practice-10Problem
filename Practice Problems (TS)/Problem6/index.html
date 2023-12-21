@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <style>
+        div{
+            display: none;
+            margin: 100px;
+            border: 1px solid;
+            padding: 2%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>BANK</h1>
+    <button  id="Deposit" class="btn">Deposit</button>
+    <button id="ViewBalance" class="btn">View Balance</button>
+
+
+    <div id="DepositDiv">
+        <h1>Deposit</h1>
+        <label for="Amount">Enter the Amount To be Deposit <input type="text" name="" id="Amount"></label><br>
+        <label for="selectBankForDeposit"> Select the Bank 
+            <select name="bank" id="selectBankForDeposit">
+                <option value="none"></option>
+                <option value="IB">Indian Bank </option>
+                <option value="SBI">State Bank of India </option>
+                <option value="IOB">Indian Overseas Bank</option>
+            </select>
+        </label><br>
+        <button id="submitDeposit" class="submit"> Click to Deposit </button><br><br>
+
+        <h3 id="outputDeposit"></h3>
+    </div>
+
+    <div id="ViewBalanceDiv">
+        <h1>View Balance</h1>
+        <label for="selectBankToViewBalance"> Select the Bank 
+            <select name="bank" id="selectBankToViewBalance">
+                <option value="none"></option>
+                <option value="IB">Indian Bank </option>
+                <option value="SBI">State Bank of India </option>
+                <option value="IOB">Indian Overseas Bank</option>
+            </select>
+        </label><br>
+        <button id="submitBalance" class="submit"> Click to View Balance </button><br><br>
+
+        <h3 id="outputBalance"></h3>
+    </div>
+
+
+    <script src="../dist/Problem6.js"></script>
+</body>
+</html>
